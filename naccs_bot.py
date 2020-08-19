@@ -627,7 +627,7 @@ async def on_command_error(context, error):
 async def on_ready():
     global should_preload
     if should_preload:
-        await preload_streams()
+        #await preload_streams()
         should_preload = False
         
     # Call get_streams() and begin 5 minute timer
